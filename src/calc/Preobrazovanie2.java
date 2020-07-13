@@ -3,7 +3,10 @@ package calc;
 public class Preobrazovanie2 {
     public String iString(int a){
         String a1="";
-        while (a >= 100){
+        while (a<0){
+            a1 += "-";
+            a = 0-a;
+        }while (a >= 100){
             a1 += "C";
             a -= 100;
         }while (a >= 90){
@@ -19,7 +22,7 @@ public class Preobrazovanie2 {
             a1 += "X";
             a -= 10;
         }while (a >= 9){
-
+            a1 += "IX";
             a -= 9;
         }
         while (a >= 5) {
